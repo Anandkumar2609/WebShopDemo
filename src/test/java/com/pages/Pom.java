@@ -36,6 +36,14 @@ public class Pom {
 	@FindBy(id = "register-button")
 	private WebElement save;
 
+	@FindBy(xpath = "//a[text()='Log in']")
+
+	private WebElement Login;
+
+	@FindBy(xpath = "//input[@value='Log in']")
+
+	private WebElement LoginMail;
+	
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -72,5 +80,12 @@ public class Pom {
 		return save;
 	}
 
-	
+	public WebElement getLogin() {
+		return Login;
+	}
+
+	public WebElement getLoginMail() {
+		return LoginMail;
+	}
+
 }
