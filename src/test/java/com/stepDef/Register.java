@@ -53,6 +53,7 @@ public class Register extends BaseClass {
 		send(p.getPassword(), "Anand@2609");
 		tap(p.getLoginMail());
 	}
+
 	@Then("Select the product and add to cart")
 	public void select_the_product_and_add_to_cart() {
 		tap(p.getElecButton());
@@ -60,21 +61,34 @@ public class Register extends BaseClass {
 		mousuHoverAcc(p.getPhoneLink());
 		tap(p.getAddToCart());
 	}
-	
+
 	@When("Click gift cards and enter details")
 	public void click_gift_cards_and_enter_details() {
-	    tap(p.getGiftCard());
-	    tap(p.getLinkiftCard());
+		tap(p.getGiftCard());
+		tap(p.getLinkiftCard());
 //	    mousuHoverAcc(p.getLinkiftCard());
-	    send(p.getRecName(), "naresh");
-	    send(p.getRecEmail(), "nareshdk@gmail.com");
-	    send(p.getRecSenderName(), "Anand");
-	    send(p.getRecSenderEmail(), "akashanand2609@gmail.com");
-	    send(p.getRecSenderMsg(), "message");
-	    tap(p.getEmailBtn());
-	    send(p.getFrndMail(), "dpk123@gmail.com");
-	    tap(p.getSubmitMail());
-	    
+		send(p.getRecName(), "naresh");
+		send(p.getRecEmail(), "nareshdk@gmail.com");
+		send(p.getRecSenderName(), "Anand");
+		send(p.getRecSenderEmail(), "akashanand2609@gmail.com");
+		send(p.getRecSenderMsg(), "message");
+		tap(p.getEmailBtn());
+		send(p.getFrndMail(), "dpk123@gmail.com");
+		tap(p.getSubmitMail());
+
 	}
 
+	@When("Select computers and sort names")
+	public void select_computers_and_sort_names() {
+		tap(p.getComputerLink());
+		tap(p.getDesktopLink());
+		selectByText(p.getSortProduct(),"Name: A to Z");
+		tap(p.getSelectProduct());
+	}
+
+	@Then("Click any products and compare list")
+	public void click_any_products_and_compare_list() {
+		tap(p.getAddCmpListBtn());
+		tap(p.getLogoutBtn());
+	}
 }
