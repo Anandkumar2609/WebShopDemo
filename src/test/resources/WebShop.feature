@@ -7,10 +7,16 @@ Feature: Register the user in demoWebShop
     And Enter personal details
 		Then Click register button and continue
 @AddToCart
- Scenario: Login and add mobile into cart
+ 	Scenario: Login and add mobile into cart
   	Given Enter into demoWebShop
   	When Click login button
   	And Enter the credentials and login
   	Then Select the product and add to cart
+@AddDetails 
+	 Scenario: Navigate to gift cards and provide details
+	 	Given Enter into demoWebShop
+  	When Click login button
+  	And Enter the credentials and login
+  	And Click gift cards and enter details
   	
 
