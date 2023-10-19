@@ -18,5 +18,12 @@ Feature: Register the user in demoWebShop
   	When Click login button
   	And Enter the credentials and login
   	And Click gift cards and enter details
-  	
+@CompareProduct
+	Scenario: Select product and compare list
+		Given Enter into demoWebShop
+  	When Click login button
+  	And Enter the credentials and login
+  	And Select computers and sort names
+  	Then Click any products and compare list 
+ 	
 
