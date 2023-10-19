@@ -35,14 +35,6 @@ public class Pom {
 
 	@FindBy(id = "register-button")
 	private WebElement save;
-
-  @FindBy(xpath="//a[text()='Log in']")
-	
-	private WebElement Login;
-
-	@FindBy(xpath="//input[@value='Log in']")
-	
-	private WebElement LoginMail;
 	
 	@FindBy(xpath="(//a[contains(text(),'Electronics')])[3]")
 	
