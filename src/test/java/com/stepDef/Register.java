@@ -42,4 +42,15 @@ public class Register extends BaseClass{
 		 tap(p.getSave());
 	}
 
+	@When("Click login button")
+	public void click_login_button() {
+		tap(p.getLogin());
+	}
+
+	@When("Enter the credentials and login")
+	public void enter_the_credentials_and_login() {
+		send(p.getEmail(), "akashanand2609@gmail.com");
+		send(p.getPassword(), "Anand@2609");
+		tap(p.getLoginMail());
+	}
 }
