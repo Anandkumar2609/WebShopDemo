@@ -12,3 +12,5 @@ Feature: Register the user in demoWebShop
   	When Click login button
   	And Enter the credentials and login
   	Then Select the product and add to cart
+  	
+
