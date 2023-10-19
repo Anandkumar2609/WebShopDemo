@@ -53,5 +53,11 @@ public class Register extends BaseClass {
 		send(p.getPassword(), "Anand@2609");
 		tap(p.getLoginMail());
 	}
-
+	@Then("Select the product and add to cart")
+	public void select_the_product_and_add_to_cart() {
+		tap(p.getElecButton());
+		tap(p.getCellLink());
+		mousuHoverAcc(p.getPhoneLink());
+		tap(p.getAddToCart());
+	}
 }
