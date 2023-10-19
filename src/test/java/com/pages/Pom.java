@@ -14,7 +14,7 @@ public class Pom {
 
 	@FindBy(xpath = "//a[@class='ico-register']")
 	private WebElement Register;
-	
+
 	@FindBy(id = "gender-male")
 	private WebElement Gender;
 
@@ -35,21 +35,21 @@ public class Pom {
 
 	@FindBy(id = "register-button")
 	private WebElement save;
-	
-	@FindBy(xpath="(//a[contains(text(),'Electronics')])[3]")
-	
+
+	@FindBy(xpath = "(//a[contains(text(),'Electronics')])[3]")
+
 	private WebElement ElecButton;
-	
-	@FindBy(xpath="(//input[@type='button'])[3]")
-	
+
+	@FindBy(xpath = "(//input[@type='button'])[3]")
+
 	private WebElement AddToCart;
-	
-	@FindBy(xpath="(//a[contains(text(),'Cell phones')])[3]")
-			
+
+	@FindBy(xpath = "(//a[contains(text(),'Cell phones')])[3]")
+
 	private WebElement CellLink;
 
-	@FindBy(xpath="//img[@title='Show products in category Cell phones']")
-	private WebElement  phoneLink;
+	@FindBy(xpath = "//img[@title='Show products in category Cell phones']")
+	private WebElement phoneLink;
 	@FindBy(xpath = "//a[text()='Log in']")
 
 	private WebElement Login;
@@ -58,7 +58,46 @@ public class Pom {
 
 	private WebElement LoginMail;
 
-	
+	@FindBy(xpath = "(//a[contains(text(),'Gift Cards')])[1]")
+
+	private WebElement giftCard;
+
+	@FindBy(xpath = "//a[@title='Show details for $5 Virtual Gift Card']")
+
+	private WebElement linkiftCard;
+
+	@FindBy(id = "giftcard_1_RecipientName")
+
+	private WebElement recName;
+
+	@FindBy(id = "giftcard_1_RecipientEmail")
+
+	private WebElement recEmail;
+
+	@FindBy(id = "giftcard_1_SenderName")
+
+	private WebElement recSenderName;
+
+	@FindBy(id = "giftcard_1_SenderEmail")
+
+	private WebElement recSenderEmail;
+
+	@FindBy(id = "giftcard_1_Message")
+
+	private WebElement recSenderMsg;
+
+	@FindBy(xpath = "(//input[@type='button'])[5]")
+
+	private WebElement emailBtn;
+
+	@FindBy(id = "FriendEmail")
+
+	private WebElement frndMail;
+
+	@FindBy(name = "send-email")
+		
+	private WebElement submitMail;
+
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -103,7 +142,6 @@ public class Pom {
 		return LoginMail;
 	}
 
-
 	public WebElement getElecButton() {
 		return ElecButton;
 	}
@@ -118,6 +156,46 @@ public class Pom {
 
 	public WebElement getPhoneLink() {
 		return phoneLink;
+	}
+
+	public WebElement getGiftCard() {
+		return giftCard;
+	}
+
+	public WebElement getLinkiftCard() {
+		return linkiftCard;
+	}
+
+	public WebElement getRecName() {
+		return recName;
+	}
+
+	public WebElement getRecEmail() {
+		return recEmail;
+	}
+
+	public WebElement getRecSenderName() {
+		return recSenderName;
+	}
+
+	public WebElement getRecSenderEmail() {
+		return recSenderEmail;
+	}
+
+	public WebElement getRecSenderMsg() {
+		return recSenderMsg;
+	}
+
+	public WebElement getEmailBtn() {
+		return emailBtn;
+	}
+
+	public WebElement getFrndMail() {
+		return frndMail;
+	}
+
+	public WebElement getSubmitMail() {
+		return submitMail;
 	}
 
 	

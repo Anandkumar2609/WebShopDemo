@@ -60,4 +60,21 @@ public class Register extends BaseClass {
 		mousuHoverAcc(p.getPhoneLink());
 		tap(p.getAddToCart());
 	}
+	
+	@When("Click gift cards and enter details")
+	public void click_gift_cards_and_enter_details() {
+	    tap(p.getGiftCard());
+	    tap(p.getLinkiftCard());
+//	    mousuHoverAcc(p.getLinkiftCard());
+	    send(p.getRecName(), "naresh");
+	    send(p.getRecEmail(), "nareshdk@gmail.com");
+	    send(p.getRecSenderName(), "Anand");
+	    send(p.getRecSenderEmail(), "akashanand2609@gmail.com");
+	    send(p.getRecSenderMsg(), "message");
+	    tap(p.getEmailBtn());
+	    send(p.getFrndMail(), "dpk123@gmail.com");
+	    tap(p.getSubmitMail());
+	    
+	}
+
 }
