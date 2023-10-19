@@ -98,6 +98,30 @@ public class Pom {
 		
 	private WebElement submitMail;
 
+	@FindBy(xpath = "(//a[@href='/computers'])[1]")
+
+ 	private WebElement computerLink;
+
+    @FindBy(xpath = "//img[@title='Show products in category Desktops']")
+
+ 	private WebElement desktopLink;
+
+    @FindBy(id = "products-orderby")
+
+ 	private WebElement sortProduct;
+
+ 	@FindBy(xpath = "//img[@alt='Picture of Build your own expensive computer']")
+
+ 	private WebElement selectProduct;
+
+	@FindBy(xpath = "//input[@value='Add to compare list']")
+
+	private WebElement addCmpListBtn;
+
+	@FindBy(xpath = "//a[@class='ico-logout']")
+
+	private WebElement logoutBtn;
+	
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -198,5 +222,27 @@ public class Pom {
 		return submitMail;
 	}
 
-	
+	public WebElement getComputerLink() {
+		return computerLink;
+	}
+
+	public WebElement getDesktopLink() {
+		return desktopLink;
+	}
+
+	public WebElement getSortProduct() {
+		return sortProduct;
+	}
+
+	public WebElement getSelectProduct() {
+		return selectProduct;
+	}
+
+	public WebElement getAddCmpListBtn() {
+		return addCmpListBtn;
+	}
+
+	public WebElement getLogoutBtn() {
+		return logoutBtn;
+	}
 }
