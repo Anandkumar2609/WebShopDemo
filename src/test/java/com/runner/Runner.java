@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="C:\\Users\\anand.kumar\\eclipse-workspace\\DemoWebShop\\src\\test\\resources\\WebShop.feature",
-glue="com.stepDef",stepNotifications =true ,dryRun = false,monochrome = true,tags = "@Reg")
+glue="com.stepDef",stepNotifications =true ,dryRun = false,monochrome = true,tags = "@AddToCart")
 public class Runner {
 
 }

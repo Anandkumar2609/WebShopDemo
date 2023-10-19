@@ -36,6 +36,29 @@ public class Pom {
 	@FindBy(id = "register-button")
 	private WebElement save;
 
+    @FindBy(xpath="//a[text()='Log in']")
+	
+	private WebElement Login;
+
+	@FindBy(xpath="//input[@value='Log in']")
+	
+	private WebElement LoginMail;
+	
+	@FindBy(xpath="(//a[contains(text(),'Electronics')])[3]")
+	
+	private WebElement ElecButton;
+	
+	@FindBy(xpath="(//input[@type='button'])[3]")
+	
+	private WebElement AddToCart;
+	
+	@FindBy(xpath="(//a[contains(text(),'Cell phones')])[3]")
+			
+	private WebElement CellLink;
+
+	@FindBy(xpath="//img[@title='Show products in category Cell phones']")
+	private WebElement  phoneLink;
+	
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -70,6 +93,30 @@ public class Pom {
 
 	public WebElement getSave() {
 		return save;
+	}
+
+	public WebElement getLogin() {
+		return Login;
+	}
+
+	public WebElement getLoginMail() {
+		return LoginMail;
+	}
+
+	public WebElement getElecButton() {
+		return ElecButton;
+	}
+
+	public WebElement getAddToCart() {
+		return AddToCart;
+	}
+
+	public WebElement getCellLink() {
+		return CellLink;
+	}
+
+	public WebElement getPhoneLink() {
+		return phoneLink;
 	}
 
 	
